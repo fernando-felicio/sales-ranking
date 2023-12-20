@@ -14,7 +14,11 @@ public class Main {
 		
 		int productCode = 0;
 		
-		System.out.printf("Enter the product code:%n 1 - Alcool%n 2 - Gasoline%n 3 - Diesel%n");
+		System.out.printf("Enter the product code:%n"
+				+ " 1 - Alcool%n"
+				+ " 2 - Gasoline%n"
+				+ " 3 - Diesel%n"
+				+ " 4 - To exit%n");
 		
 		while (productCode != 4) {
 			productCode = sc.nextInt();
@@ -30,6 +34,8 @@ public class Main {
 			case 3:
 				diesel += 1;
 				break;
+			default:
+				System.out.println("Invalid code. Please enter 1, 2, 3 or 4 to exit.");
 			}
 		}
 		
